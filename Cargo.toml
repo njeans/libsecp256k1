@@ -30,8 +30,8 @@ hex-literal = "0.3.3"
 bincode = "1.3.3"
 
 [build-dependencies]
-libsecp256k1-gen-ecmult = { version = "0.3.0", path = "gen/ecmult" }
-libsecp256k1-gen-genmult = { version = "0.3.0", path = "gen/genmult" }
+libsecp256k1-gen-ecmult = { version = "0.3.0", path = "gen/ecmult", default-features = false }
+libsecp256k1-gen-genmult = { version = "0.3.0", path = "gen/genmult", default-features = false }
 
 [features]
 default = ["std", "hmac", "static-context"]
